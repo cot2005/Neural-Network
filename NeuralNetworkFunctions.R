@@ -14,8 +14,6 @@ library(ggbiplot)
 library(PRROC)
 
 
-set.seed(1990)
-
 NN.binary.stkBuildv1.0<-function(processedfile, networkConfig = c(30,25,5),algorithm = "rprop+", 
                           minmax = TRUE, trainProp = 0.9) {
   NNtrainingData <- read.table(processedfile, header = TRUE, sep = "\t", stringsAsFactors = FALSE)
